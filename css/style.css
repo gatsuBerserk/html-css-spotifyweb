@@ -10,7 +10,9 @@
     display: table;
     clear: both;
 }
-
+.bg-color{
+    color: white;
+}
 /* Header */ 
 /* Versione organizzazione contenuti contenuti  */
  
@@ -22,15 +24,16 @@ header .upgrade{
     justify-content: flex-end; 
     align-items: center; 
     padding: 1.5rem; 
+    opacity: .9; 
     
-    background-color: yellow; 
+    background-color: black; 
 } 
 
 header .btn{ 
     text-transform: uppercase;
-    border: 2px solid tomato;
+    border: 1px solid white;
     border-radius: 50px; 
-    padding: 1rem 3rem;
+    padding: 1rem 3rem; 
 } 
 
 /* Main */ 
@@ -42,27 +45,24 @@ main .nav-left{
     flex-direction: column; 
     flex-wrap: wrap;
     float: left; 
-    /* padding-left: 1.5rem;   at the end of the project, remember to insert the padding for all items  */  
+    line-height: 30px;
+    padding-left: 1.5rem;      
     width: 15%;
     height: 90vh; 
-    background-color: tomato;
+    background-color: black;
 } 
 
 main .nav-left .logo{ 
     display: flex;
     align-items: center;
     height: 10vh; 
-    background-color: blue; 
 } 
 
 main .nav-left .logo img{
     height: 50%;
-    padding: .3rem;
-    margin-left: 1rem;
 }  
 
 main .nav-left .home{  
-    padding:1.5rem;
     font-size: 2rem;
 }
 
@@ -77,11 +77,10 @@ main .nav-left .home .option a>i{
     font-size: 2rem;
 } 
 main section.nav-left .title-section-nav{
-    padding: 1.5rem;
+    margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
 }  
 
 main section.nav-left .creates{
@@ -90,13 +89,8 @@ main section.nav-left .creates{
 }
 
 main section.nav-left .creates span{
-    padding: 1.5rem 1.5rem 1.5rem .5rem;
-
-} 
-
-main section.nav-left .name-playlist{
-    padding: 1.5rem;
-} 
+    padding: 1.5rem 1.5rem 1.5rem; 
+}  
 
 main section.nav-left .name-playlist ol li{
     list-style: none; 
@@ -107,43 +101,51 @@ main section.nav-left section.down{
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
-    gap: 350px; 
+    gap: 400px; 
 }
 
 main section.nav-left .name-playlist ol li>a{ 
-    /* at the end of the project remember to remove the decoration from all the i with a class for all the items  */
     text-decoration: none; 
     color: white;
 }
 
 main section.nav-left .creates i{ 
-    padding: 0 0 0 1.5rem ;
+    /* padding: 0 0 0 1.5rem ; */
     font-size: 3.5rem;
 } 
 
-
-main section.down .app .install> i, 
-.name-profile> i { 
-    padding: 0 .5rem 0.5rem 1.5rem;
+main section.down .app .install> a, .name-profile> a{ 
+    text-decoration: none;
+    padding: 0 .5rem .8rem 0 ; 
+    color: white;
 } 
 
-main section.down .name-profile span{ 
+main section.down .name-profile p{ 
+    font-size: 1.5rem; 
+}  
+
+main section.down .name-profile a>i{
     font-size: 1.5rem;
-} 
+
+}
+
+main section.nav-left .down .app hr{
+    width: 90%;
+    margin: 5px auto 5px 0;
+}
 
 
 
 
 
-
-
+/* / Nav bar */
 
 
 main .container-principal{ 
     float: right;
     width: 85%;
     height: 80vh;  
-    background-color: seagreen;
+    background-color: rgb(20, 25, 34);
 }
 
 /* Footer */
