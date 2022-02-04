@@ -38,7 +38,8 @@ header .btn{
 
 
 main .nav-left{ 
-    float: left;
+    float: left; 
+    /* padding-left: 1.5rem;   at the end of the project, remember to insert the padding for all items  */  
     width: 15%;
     height: 90vh; 
     background-color: tomato;
@@ -65,12 +66,52 @@ main .nav-left .home{
 main .nav-left .home .option> a{ 
     text-decoration: none; 
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
+    line-height: 3rem;
 } 
 
 main .nav-left .home .option a>i{
     font-size: 2rem;
+} 
+main section.nav-left .title-section-nav{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}  
+
+main section.nav-left .creates{
+    display: flex;
+    align-items: center;
 }
+
+main section.nav-left .creates span{
+    padding: 1.5rem 1.5rem 1.5rem .5rem;
+
+} 
+
+main section.nav-left .name-playlist{
+    padding: 1.5rem;
+} 
+
+main section.nav-left .name-playlist ol li{
+    list-style: none; 
+    line-height: 30px;
+} 
+
+main section.nav-left .name-playlist ol li>a{ 
+    /* at the end of the project remember to remove the decoration from all the i with a class for all the items  */
+    text-decoration: none; 
+    color: white;
+}
+
+main section.nav-left .creates i{ 
+    padding: 0 0 0 1.5rem ;
+    font-size: 3.5rem;
+}
+
+
 
 
 
