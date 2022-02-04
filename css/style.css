@@ -4,3 +4,34 @@
     box-sizing: border-box; 
     font-family :  'Circular Std' , sans-serif ;                                               
 } 
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header */ 
+header{
+    float: right;
+    
+} 
+
+header .upgrade{
+    width:85vw ;
+    height: 10vh; 
+    background-color: yellow;
+} 
+
+main .nav-left{
+    width: 15vw;
+    height: 90vh; 
+    background-color: tomato;
+} 
+
+
+
+footer .player{
+    height: 10vh;
+    background-color: brown;
+}
