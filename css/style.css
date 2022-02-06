@@ -34,7 +34,15 @@ header .btn{
     border: 1px solid white;
     border-radius: 50px; 
     padding: 1rem 3rem; 
+}  
+
+header .upgrade .btn span a {
+    text-decoration: none; 
+    color: white;
 } 
+
+
+
 
 /* Main */ 
 
@@ -45,7 +53,7 @@ main .nav-left{
     flex-direction: column; 
     flex-wrap: wrap;
     float: left; 
-    line-height: 30px;
+    /* line-height: 30px; */
     padding-left: 1.5rem;      
     width: 15%;
     height: 90vh; 
@@ -90,15 +98,20 @@ main section.nav-left .creates{
 
 main section.nav-left .creates span{
     padding: 1.5rem 1.5rem 1.5rem; 
-}  
+} 
+
+/* main .nav-left section.down .name-playlist{
+    overflow:auto ;
+} */
 
 main section.nav-left .name-playlist ol li{
     list-style: none; 
-    line-height: 30px;
+    line-height: 35px;
 } 
 
 main section.nav-left section.down{ 
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
     flex-direction: column; 
     justify-content: space-between; 
     gap: 400px; 
@@ -110,7 +123,6 @@ main section.nav-left .name-playlist ol li>a{
 }
 
 main section.nav-left .creates i{ 
-    /* padding: 0 0 0 1.5rem ; */
     font-size: 3.5rem;
 } 
 
@@ -141,11 +153,37 @@ main section.nav-left .down .app hr{
 /* / Nav bar */
 
 
-main .container-principal{ 
+main .container-principal{  
+    display: flex;
+    flex-wrap: wrap;
     float: right;
     width: 85%;
     height: 80vh;  
     background-color: rgb(20, 25, 34);
+} 
+
+main section.container-principal .center-nav{
+    width: 100%;
+    height: 50px;
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px;
+    background-color: yellow; 
+} 
+
+main section.container-principal .center-nav ol li{ 
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    text-transform: uppercase; 
+    font-weight: bold;
+    text-decoration: none; 
+    
+} 
+
+main section.container-principal .center-nav ol li a{
+    text-decoration: none;
+    color: black; 
 }
 
 /* Footer */
