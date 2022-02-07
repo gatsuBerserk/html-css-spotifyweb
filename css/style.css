@@ -229,12 +229,13 @@ footer .container-multimedia .play {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    
+    width: calc(100% / 2);
+    height: 10vh;
 }  
 
 footer .container-multimedia .play .buttoms{  
     display: flex; 
-    align-items: center; 
+    align-items: flex-end; 
     justify-content: center; 
     gap: 3rem;
     width: 100%;
@@ -247,15 +248,33 @@ footer .container-multimedia .play .buttoms{
  
 .bg-color{
     color: white;
-} 
+}  
 
-
-footer .container-multimedia .play{ 
+footer .container-multimedia .bar-time{
     display: flex;
-    
-    width: calc(100% / 2);
-    height: 10vh;
+    justify-content: center; 
+    align-items:center;  
+    gap: 1rem;
+    width: 100%;
+    height: 5vh; 
+    color: white;
 } 
+
+footer .container-multimedia .play .bar-time .line {
+    border-radius: 50px;
+    width: 500px; 
+    height: .3rem;
+    background-color: silver; 
+
+} 
+
+footer .container-multimedia .play .bar-time .line .in{ 
+    border-radius: 50px;
+    width: 250px;
+    height: .3rem;
+    background-color: yellow;
+}
+
 
 footer .container-multimedia .player-dx{ 
     display: flex;
@@ -264,4 +283,18 @@ footer .container-multimedia .player-dx{
     gap: 1.5rem;
     width: calc(10% - .5rem); 
     height: 10vh;
+} 
+
+footer .container-multimedia .player-dx .line-2{ 
+    border-radius: 50px;
+    width: 150px;
+    height: .3rem;
+    background-color: silver;
+} 
+
+footer .container-multimedia .player-dx .line-2 .in-2{
+    border-radius: 50PX;
+    width: 30px;
+    height: .3rem;
+    background-color: yellow;
 }
