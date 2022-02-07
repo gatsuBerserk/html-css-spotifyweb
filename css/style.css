@@ -134,6 +134,49 @@ main section.main-content .upgrade h4{
 footer{ 
     float: left;
     height: 10vh;  
+    width: 100%; 
+    padding: 0 0.5rem;
+    background-color:black ;
+} 
+
+footer .container-miltimedia{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
     width: 100%;
-    background-color:crimson ;
+} 
+
+footer .container-multimedia .info{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:calc(10% - .5rem); 
+    height: 10vh; 
+
+} 
+
+footer .container-multimedia .info .cover{ 
+    display: flex;
+    width: calc(100% / 3); 
+    height: 10vh; 
+    justify-content: center;  
+    align-items: center; 
+} 
+
+footer .container-multimedia .info .cover img{
+    width: 50px;
+} 
+
+footer .container-multimedia .info .save {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    height: 10vh; 
+}  
+
+ 
+.bg-color{
+    color: white;
 }
+
