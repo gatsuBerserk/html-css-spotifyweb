@@ -132,18 +132,17 @@ main section.main-content .upgrade h4{
 /* Footer */
 
 footer{ 
-    float: left;
+    /* float: left; */
     height: 10vh;  
     width: 100%; 
     padding: 0 0.5rem;
     background-color:black ;
 } 
 
-footer .container-miltimedia{ 
+footer .container-multimedia{ 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
-
     width: 100%;
 } 
 
@@ -173,10 +172,45 @@ footer .container-multimedia .info .save {
     align-items: center; 
     gap: 10px;
     height: 10vh; 
+}
+
+footer .container-multimedia .play {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
 }  
+
+footer .container-multimedia .play .buttoms{  
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 3rem;
+    width: 100%;
+    height: 5vh; 
+    color: white;
+    border: 1px solid black;
+}
+    
 
  
 .bg-color{
     color: white;
-}
+} 
 
+
+footer .container-multimedia .play{ 
+    display: flex;
+    
+    width: calc(100% / 2);
+    height: 10vh;
+} 
+
+footer .container-multimedia .player-dx{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 1.5rem;
+    width: calc(10% - .5rem); 
+    height: 10vh;
+}
