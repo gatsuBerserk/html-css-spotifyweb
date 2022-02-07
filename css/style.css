@@ -104,7 +104,7 @@ main section.nav-left .app .name-profile a >i{
  /* Main Content */ 
 
  /* top */
-main .main-content{ 
+main .main-content{  
     float: left;
     background-color: rgb(20, 25, 34);
     width:90%; 
@@ -149,7 +149,34 @@ main section.main-content .top-bar ol li{
     display: inline-block; 
     list-style: none; 
 
+} 
+
+main .main-content .title-section{
+    padding: 1.5rem;
+    font-size: 2rem;
+} 
+
+main section.main-content section.album{ 
+    padding: .5rem .5rem;
+    width: 100%;
+    height: 85%; 
+    overflow:auto;
+} 
+
+main section.album img{ 
+    margin-right: 2rem;
+    width: 200px;
 }
+
+main section.album .cover-played, .circle img{
+    border-radius: 50% ;
+}
+
+main section.album .cover-played{
+    margin: 0 1.5rem;
+}
+
+
 
 
 
