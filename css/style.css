@@ -436,4 +436,57 @@ footer .container-multimedia .player-dx .line-2 .in-2{
     
     } 
    
+} 
+
+@media screen and (max-width:768px) {
+   
+    main .main-content{   
+        width:75%; 
+    } 
+    main .nav-left{ 
+        width: 25%;
+        padding-left: 3px;
+            
+    } 
+    
+    main section.nav-left .top-content .logo{
+        height: 4vh;
+    } 
+    
+    main section.main-content .upgrade{  
+        height: 4vh;
+    } 
+    
+    main section.main-content .top-bar{
+        text-align: center;
+    } 
+
+    main section.main-content .top-bar ol li {
+        padding: .5rem;
+    }
+
+    section.main-content section.cover-played h2 { 
+        font-size: 1.5rem; 
+    } 
+    
+    section.main-content section.cover-played h3{
+        font-size: 1rem;
+    }
+    
+    section.main-content section.cover-played .card .description{ 
+        padding: 10px;  
+        font-size: .8rem;
+    } 
+    
+    section.main-content section.cover-played .card{ 
+        width: 50%; 
+        padding-right: 1rem;
+    
+    } 
+    
+    main .nav-left{
+        padding: 0  .5rem 0 .5rem; 
+    }
+
+
 }
