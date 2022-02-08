@@ -381,7 +381,28 @@ footer section.volume .player-time2 .bar2 .in2{
         width: 25%; 
         padding-right: 1rem;
     
+    } footer section.player-controll .player-buttoms {
+        width: 85%;
+        font-size: 1.5rem;}
+
+    
+    footer section.play {
+        flex-basis: 40%;
     } 
+
+    footer section.play img {
+        width: 40%;
+        margin-right: 15px
+    }
+    
+    footer section.player-controll{ 
+            flex-basis: 70%; 
+    }  
+        
+    footer section.volume {
+            flex-basis: 40%;
+        }
+
     
 
 } 
