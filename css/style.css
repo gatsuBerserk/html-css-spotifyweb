@@ -151,37 +151,53 @@ main section.main-content .top-bar ol li{
 
 } 
 
-/* Content center */
+/* Content center */ 
 
+main section.main-content section.cover-played{
+    display: flex;
+    flex-wrap: wrap;
+    height: 85%;
+    overflow: auto;
+}
 
+div.card-title{
+    margin: 2rem 1rem;
+}
 
 main section.main-content section.cover-played div.card-container{  
     display: flex; 
     flex-wrap: wrap; 
     padding: .5rem 1.5rem; 
-    width: 100%;
-    overflow:auto; 
-
-    background-color: tomato;
+    width: 100%; 
 } 
 
-section.main-content section.cover-played h2{
+section.main-content section.cover-played h2 { 
     font-size: 3rem; 
     color: white;
 }  
 
-section.main-content section.cover-played .card .description{ 
-    font-size: 1rem;
+section.main-content section.cover-played .card .description{  
+    font-size: 1.5rem;
     color: white;
     text-align: center;
 } 
 
+.radius{
+    border-radius: 50%;
+}
+
+
 
 section.main-content section.cover-played .card img{ 
-    width: 100%;
-    padding: 1rem .5rem;
+    width: 100%; 
+    padding-right: 1rem;
 
 } 
+
+section.main-content .creation h3{ 
+
+    color: white;
+}
 
 
 
