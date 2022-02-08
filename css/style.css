@@ -250,7 +250,6 @@ footer section.play{
     flex-basis: 15%;
     justify-content: space-around;
     align-items: center;
-    /* background-color: yellow; */
 } 
 
 footer section.play img{
@@ -325,104 +324,6 @@ footer section.volume .player-time2 .bar2 .in2{
 
 
 
-/* footer .container-multimedia{ 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    width: 100%;
-} 
-
-footer .container-multimedia .cover{ 
-    display: flex;
-    flex-basis: 10%;
-    height: 10vh; 
-    justify-content: space-between;  
-    align-items: center; 
-} 
-
-footer .container-multimedia .cover img{
-    width: 50px;
-} 
-
-footer .container-multimedia .save {
-    display: flex; 
-    align-items: center; 
-    gap: 10px;
-    height: 10vh; 
-}
-
-footer .container-multimedia .play {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    flex-basis: 30%;
-    height: 10vh;
-}  
-
-footer .container-multimedia .play .buttoms{  
-    display: flex; 
-    align-items: flex-end; 
-    justify-content: center; 
-    gap: 3rem;
-    width: 100%;
-    height: 5vh; 
-    color: white;
-}
-    
-
- 
-.bg-color{
-    color: white;
-}  
-
-footer .container-multimedia .bar-time{
-    display: flex;
-    justify-content: center; 
-    align-items:center;  
-    gap: 1rem;
-    width: 100%;
-    height: 5vh; 
-    color: white;
-} 
-
-footer .container-multimedia .play .bar-time .line {
-    border-radius: 50px;
-    width: 500px; 
-    height: .3rem;
-    background-color: silver; 
-
-} 
-
-footer .container-multimedia .play .bar-time .line .in{ 
-    border-radius: 50px;
-    width: 250px;
-    height: .3rem;
-    background-color: yellow;
-}
-
-
-footer .container-multimedia .player-dx{ 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; 
-    gap: 1.5rem;
-    flex-basis: 10%; 
-    height: 10vh;
-} 
-
-footer .container-multimedia .player-dx .line-2{ 
-    border-radius: 50px;
-    width: 150px;
-    height: .3rem;
-    background-color: silver;
-} 
-
-footer .container-multimedia .player-dx .line-2 .in-2{
-    border-radius: 50PX;
-    width: 30px;
-    height: .3rem;
-    background-color: yellow;
-}  */
 
 
 
@@ -640,7 +541,27 @@ footer .container-multimedia .player-dx .line-2 .in-2{
         width: 50%; 
         padding-right: 1rem;
     
-    } 
+    }  
     
-   
+    footer section.player-controll .player-buttoms {
+        width: 85%;
+        font-size: 1.5rem;}
+
+    
+    footer section.play {
+        flex-basis: 40%;
+    } 
+
+    footer section.play img {
+        width: 40%;
+        margin-right: 15px
+    }
+    
+    footer section.player-controll{ 
+            flex-basis: 70%; 
+    }  
+        
+    footer section.volume {
+            flex-basis: 40%;
+        }
 }  
