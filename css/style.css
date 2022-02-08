@@ -186,7 +186,6 @@ main section.main-content section.cover-played{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    overflow: auto;
 }
 
 div.card-title{
@@ -235,14 +234,98 @@ section.main-content .creation h3{
 /* Footer */
 
 footer{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     float: left;
     height: 10vh;  
     width: 100%; 
-    padding: 0 0.5rem;
+    padding: 0 0.5rem; 
+    color: white;
     background-color:black ;
+}  
+
+footer section.play{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: yellow; */
 } 
 
-footer .container-multimedia{ 
+footer section.play img{
+    width: 25%;
+} 
+
+footer section.player-controll{
+    display: flex;
+    flex-direction: column; 
+    flex-basis: 30%; 
+    align-items: center;
+}  
+
+footer section.player-controll .player-buttoms{ 
+    display: flex;
+    width: 30%; 
+    justify-content: space-around;
+    align-items: center; 
+    font-size: 1.5rem;  
+}
+
+footer section.player-controll .player-time{
+    display: flex; 
+    width: 80%; 
+    justify-content: space-evenly; 
+    align-items: center;
+}  
+
+footer section.player-controll .player-time .bar{
+    width: 40%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 50px;
+} 
+
+footer section.player-controll .player-time .bar .in{
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: tomato;
+}
+
+footer section.volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-basis: 20%; 
+} 
+
+footer section.volume .player-time2{
+    display: flex; 
+    width: 40%; 
+    align-items: center;
+
+} 
+
+footer section.volume .player-time2 .bar2{
+    width: 80%;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 50px;
+}  
+
+footer section.volume .player-time2 .bar2 .in2{
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: tomato;
+}
+
+
+
+
+
+/* footer .container-multimedia{ 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-between;
@@ -339,7 +422,7 @@ footer .container-multimedia .player-dx .line-2 .in-2{
     width: 30px;
     height: .3rem;
     background-color: yellow;
-} 
+}  */
 
 
 
@@ -558,5 +641,6 @@ footer .container-multimedia .player-dx .line-2 .in-2{
         padding-right: 1rem;
     
     } 
+    
    
 }  
