@@ -137,6 +137,7 @@ main .main-content{
     background-color: rgb(20, 25, 34);
     width:90%; 
     height: 90vh;
+    overflow: auto;
 } 
 
 main section.main-content .upgrade{  
@@ -283,7 +284,6 @@ footer .container-multimedia .play .buttoms{
     width: 100%;
     height: 5vh; 
     color: white;
-    border: 1px solid black;
 }
     
 
@@ -341,15 +341,139 @@ footer .container-multimedia .player-dx .line-2 .in-2{
     background-color: yellow;
 } 
 
+
+
+/* Large */
+
+@media screen and (max-width:992px) {
+    main .main-content{   
+        width:75%; 
+    } 
+    main .nav-left{ 
+        width: 25%;
+        padding: 10px;      
+    }  
+
+    main section.nav-left .top-content .top-menu .option img, span{ 
+        vertical-align: middle;
+        width: 15%;
+    } 
+     main section.nav-left .top-content .logo{ 
+        height: 4vh;
+        width: 80%;
+    } 
+    
+    main section.nav-left  img{ 
+        text-align: left;
+        width: 80%;
+    }
+    main section.nav-left .top-content .logo{
+        height: 4vh;
+    } 
+    
+    main section.main-content .upgrade{  
+        height: 4vh;
+    } 
+    
+    main section.main-content .top-bar{
+        text-align: center;
+    } 
+
+    main section.main-content .top-bar ol li { 
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+
+    section.main-content section.cover-played h2 { 
+        font-size: 1.5rem; 
+    } 
+    
+    section.main-content section.cover-played .card-container .description{
+        font-size: .8rem; 
+        padding: 5px;
+    } 
+
+    section.main-content section.cover-played .card{ 
+        width: 25%; 
+        padding-right: 1rem;
+    
+    } 
+    
+
+} 
+
+
+
+/* Medium */
+
+@media screen and (max-width:768px) {
+   
+    main .main-content{   
+        width:75%; 
+    } 
+    main .nav-left{ 
+        width: 25%;
+        padding-left: 3px;
+            
+    } 
+    
+    main section.nav-left .top-content .logo{
+        height: 4vh;
+    } 
+    
+    main section.main-content .upgrade{  
+        height: 4vh;
+    } 
+    
+    main section.main-content .top-bar{
+        text-align: center;
+    } 
+
+    main section.main-content .top-bar ol li { 
+        padding: .5rem;
+    }
+
+    section.main-content section.cover-played h2 { 
+        font-size: 1.5rem; 
+    } 
+    
+    section.main-content section.cover-played h3{
+        font-size: 1rem;
+    }
+    
+    section.main-content section.cover-played .card .description{ 
+        padding: 10px;  
+        font-size: .8rem;
+    } 
+    
+    section.main-content section.cover-played .card{ 
+        width: 50%; 
+        padding-right: 1rem;
+    
+    } 
+    
+    main .nav-left{
+        padding: 0  .5rem 0 .5rem; 
+    }
+
+
+}  
+
+
+
+
 /* x-small manca barra */ 
 
 @media screen and (max-width:576px){  
 
+    main .main-content{   
+        width:90%; 
+    } 
     main .nav-left{ 
-        width: 50px;
+        width: 10%;
         padding-left: 3px;
             
-    }  
+    } 
 
      main section.nav-left .top-content .logo img{
         display: none;
@@ -403,7 +527,6 @@ footer .container-multimedia .player-dx .line-2 .in-2{
     main section.main-content .upgrade{  
         height: 4vh;
     } 
-    /* card */ 
     
     main section.main-content section.cover-played div.card-container{  
         display: flex; 
@@ -436,57 +559,4 @@ footer .container-multimedia .player-dx .line-2 .in-2{
     
     } 
    
-} 
-
-@media screen and (max-width:768px) {
-   
-    main .main-content{   
-        width:75%; 
-    } 
-    main .nav-left{ 
-        width: 25%;
-        padding-left: 3px;
-            
-    } 
-    
-    main section.nav-left .top-content .logo{
-        height: 4vh;
-    } 
-    
-    main section.main-content .upgrade{  
-        height: 4vh;
-    } 
-    
-    main section.main-content .top-bar{
-        text-align: center;
-    } 
-
-    main section.main-content .top-bar ol li {
-        padding: .5rem;
-    }
-
-    section.main-content section.cover-played h2 { 
-        font-size: 1.5rem; 
-    } 
-    
-    section.main-content section.cover-played h3{
-        font-size: 1rem;
-    }
-    
-    section.main-content section.cover-played .card .description{ 
-        padding: 10px;  
-        font-size: .8rem;
-    } 
-    
-    section.main-content section.cover-played .card{ 
-        width: 50%; 
-        padding-right: 1rem;
-    
-    } 
-    
-    main .nav-left{
-        padding: 0  .5rem 0 .5rem; 
-    }
-
-
-}
+}  
