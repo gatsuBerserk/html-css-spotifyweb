@@ -20,13 +20,15 @@ main{
 
 
 /* Nav Left */
- main .nav-left{ 
+ 
+
+main .nav-left{ 
     display: flex; 
     flex-wrap: wrap;
     flex-direction: column; 
     justify-content: space-between;
     padding-left: 0.5rem;
-    width: 10%; 
+    width: 200px; 
     height: 100%; 
     float: left;
     background-color: black;
@@ -147,17 +149,18 @@ main section.nav-left .app .install a, .name-profile a{
 main .main-content{  
     float: left;
     background-color: rgb(20, 25, 34);
-    width:90%; 
+    width:calc(100% - 200px); 
     height: 90vh;
     overflow: auto;
 } 
 
 main section.main-content .upgrade{  
-    display: flex; 
+    display: flex;  
+    position: fixed;
     justify-content: end;
     align-items: center;
     padding: 2rem 1.5rem;
-    width: 100%; 
+    width: 93%; 
     height: 8vh;
     background-color: rgba(0, 0, 0, 0.3);
 } 
@@ -165,7 +168,8 @@ main section.main-content .upgrade{
 main section.main-content .upgrade h4{ 
     border: 1px solid white; 
     color: white;
-    border-radius: 50px;
+    border-radius: 50px; 
+    margin-right: 50px;
     padding: .5rem 1.5rem;
     text-transform: uppercase;
 
@@ -179,6 +183,7 @@ main section.main-content .top-bar{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10vh;
     height: 5vh; 
 }  
 
@@ -270,7 +275,7 @@ footer section.play{
 } 
 
 footer section.play img{
-    width: 25%;
+    width: 80px;
 } 
 
 footer section.player-controll{
@@ -339,13 +344,96 @@ footer section.volume .player-time2 .bar2 .in2{
 
 
 
+/* Extra */
 
+/* @media screen and (max-width:1200px) {
+    main .main-content{   
+        width:75%; 
+    } 
+    main .nav-left{ 
+        width: 25%;
+        padding: 10px;      
+    }  
 
+    main section.nav-left .top-content .top-menu .option img, span{ 
+        vertical-align: middle;
+        width: 15%;
+    } 
+     main section.nav-left .top-content .logo{ 
+        height: 4vh;
+        width: 60%;
+    } 
+    
+    main section.nav-left  img{ 
+        text-align: left;
+        width: 80%;
+    }
+    main section.nav-left .top-content .logo{
+        height: 4vh;
+    } 
+    
+    main section.main-content .upgrade{  
+        height: 4vh;
+    } 
+    
+    main section.main-content .top-bar{
+        text-align: center;
+    } 
+
+    main section.main-content .top-bar ol li { 
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+
+    section.main-content section.cover-played h2 { 
+        font-size: 1.5rem; 
+    } 
+    
+    section.main-content section.cover-played .card-container .description{
+        font-size: .8rem; 
+        padding: 5px;
+    } 
+
+    main section.main-content section.cover-played .card-container .card{ 
+        width: calc(100% / 5); 
+        padding-right: 1rem;
+    
+    } footer section.player-controll .player-buttoms {
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    
+    footer section.player-controll .player-time .bar{
+        width: 60%;
+    }
+
+    
+    footer section.play {
+        flex-basis: 40%;
+    } 
+
+    footer section.play img {
+        width: 25%;
+        margin-right: 15px
+    }
+    
+    footer section.player-controll{ 
+            flex-basis: 60%; 
+    }  
+        
+    footer section.volume {
+            flex-basis: 40%;
+        }
+
+    
+
+}
+ */
 
 
 
 /* Large */ 
-
+/* 
 @media screen and (max-width:992px) {
     main .main-content{   
         width:75%; 
@@ -422,104 +510,17 @@ footer section.volume .player-time2 .bar2 .in2{
 
     
 
-} 
+}  */
 
-@media screen and (max-width:1200px) {
-    main .main-content{   
-        width:75%; 
-    } 
-    main .nav-left{ 
-        width: 25%;
-        padding: 10px;      
-    }  
+  
 
-    main section.nav-left .top-content .top-menu .option img, span{ 
-        vertical-align: middle;
-        width: 15%;
-    } 
-     main section.nav-left .top-content .logo{ 
-        height: 4vh;
-        width: 60%;
-    } 
-    
-    main section.nav-left  img{ 
-        text-align: left;
-        width: 80%;
-    }
-    main section.nav-left .top-content .logo{
-        height: 4vh;
-    } 
-    
-    main section.main-content .upgrade{  
-        height: 4vh;
-    } 
-    
-    main section.main-content .top-bar{
-        text-align: center;
-    } 
 
-    main section.main-content .top-bar ol li { 
-        font-size: 1.2rem;
-        padding: .5rem;
-    }
-
-    section.main-content section.cover-played h2 { 
-        font-size: 1.5rem; 
-    } 
-    
-    section.main-content section.cover-played .card-container .description{
-        font-size: .8rem; 
-        padding: 5px;
-    } 
-
-    main section.main-content section.cover-played .card-container .card{ 
-        width: calc(100% / 5); 
-        padding-right: 1rem;
-    
-    } footer section.player-controll .player-buttoms {
-        width: 85%;
-        font-size: 1.5rem;
-    }
-    
-    footer section.player-controll .player-time .bar{
-        width: 60%;
-    }
-
-    
-    footer section.play {
-        flex-basis: 40%;
-    } 
-
-    footer section.play img {
-        width: 40%;
-        margin-right: 15px
-    }
-    
-    footer section.player-controll{ 
-            flex-basis: 60%; 
-    }  
-        
-    footer section.volume {
-            flex-basis: 40%;
-        }
-
-    
-
-}  
-
-@media screen  and (max-height:520px) {
-
-    main .app{
-        display: none;
-    }
-    
-}
 
 
 
 /* Medium */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
    
     main .main-content{   
         width:75%;  
@@ -590,14 +591,14 @@ footer section.volume .player-time2 .bar2 .in2{
         }
 
 
-}  
+}   */
 
 
 
 
 /* x-small manca barra */ 
 
-@media screen and (max-width:576px){  
+/* @media screen and (max-width:576px){  
 
     main .main-content{   
         width:90%; 
@@ -714,4 +715,4 @@ footer section.volume .player-time2 .bar2 .in2{
     footer section.volume {
             flex-basis: 40%;
         }
-}  
+}   */
