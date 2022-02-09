@@ -242,9 +242,93 @@ section.main-content section.cover-played .card .description{
 
 section.main-content section.cover-played .card img{ 
     width: 100%; 
-    padding-right: 1rem;
+    padding-right: 1rem; 
 
 } 
+
+/* hover */ 
+
+/* SISTEMARE GLI HOVER NELLA GIUSTA POSIZIONE */
+
+main section.nav-left .top-menu .option:hover{
+    border-left: 5px solid yellow;
+}  
+
+main section.nav-left .top-content .playlist ol li a:hover{
+    color: tomato;
+}
+
+
+
+main section.main-content .top-bar ol li:hover{
+    border-bottom: 1px solid yellow;
+    transition: 1s; 
+    border-radius: 50px; 
+    
+}
+
+section.main-content section.cover-played .card .special{
+    display: none;
+}  
+
+section.main-content section.cover-played .card:hover{
+    transform: scale(1.1);  
+    transition: .2s; 
+} 
+
+section.main-content section.cover-played .card:hover h3, .card:hover h5{
+    color: tomato; 
+    transition: .5s; 
+    font-size: .8rem;  
+
+}  
+
+section.main-content section.cover-played .card .play{
+    display: none;
+} 
+
+section.main-content .upgrade h4:hover{
+    transform: scale(1.5); 
+    transition: ease-out .5s ; 
+    border-color:green;  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+} 
+
+footer section.play .far:hover, .fas:hover{
+    color: yellow;
+    transform: scale(2);
+}
+
+footer section.player-controll .player-buttoms .far:hover{
+    transform: scale(1.4); 
+    color: tomato;
+}  
+
+footer section.player-controll .player-time .bar:hover, 
+footer section.volume .player-time2 .bar2:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* //hover */
+
+section.main-content section.cover-played .card:hover .play{
+    display: block;
+    top: 25%;
+    left: 35%; 
+    transform: (-25%, -35%);
+    width: 100px; 
+    position: absolute; 
+    width: 35%; 
+}
+
+
+
+
+
+
+
 
 section.main-content .creation h3{ 
 
@@ -352,16 +436,18 @@ footer section.volume .player-time2 .bar2 .in2{
     border-radius: 50px;
     background-color: tomato;
 }
+ 
 
+@media screen and (max-height:550px){
+     section.nav-left .app {
+         display: none;
+     }
+ }
 
 
 /* Extra */
 
 @media screen and (max-width:1200px) {
-    
-    
-    
-    
     
     main section.main-content .top-bar{
         text-align: center;
