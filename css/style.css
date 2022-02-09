@@ -12,8 +12,13 @@
 } 
 main{
     height: 90vh; 
+} 
 
-}  
+.relative{
+    position: relative;
+}
+
+
 /* Nav Left */
  main .nav-left{ 
     display: flex; 
@@ -89,6 +94,11 @@ main section.nav-left .top-content .playlist a{
 
 main section.nav-left .top-content .playlist ol {
     padding-top: 1rem;
+} 
+
+main section.nav-left .app{
+    position: absolute;
+    bottom: 0;
 }
 
 main section.nav-left .app .install{
@@ -96,6 +106,7 @@ main section.nav-left .app .install{
 }
 
 main section.nav-left .app{
+    width: 90%;
     margin-bottom: 10px;
 }
 
@@ -119,7 +130,8 @@ main section.nav-left .app .name-profile{
 main section.nav-left .app .name-profile> img{
     background-color: salmon;
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px; 
+    margin-bottom: 20px;
 }
 main section.nav-left .app .install a, .name-profile a{
     text-decoration: none; 
@@ -187,10 +199,15 @@ main section.main-content section.cover-played{
     flex-wrap: wrap;
     height: 100%;
 }
+main section.main-content section.cover-played .card-container .card{
+    width: calc(100% / 6);
+}
 
 div.card-title{
     margin: 2rem 1rem;
-}
+} 
+
+
 
 main section.main-content section.cover-played div.card-container{  
     display: flex; 
@@ -327,7 +344,7 @@ footer section.volume .player-time2 .bar2 .in2{
 
 
 
-/* Large */
+/* Large */ 
 
 @media screen and (max-width:992px) {
     main .main-content{   
@@ -377,8 +394,8 @@ footer section.volume .player-time2 .bar2 .in2{
         padding: 5px;
     } 
 
-    section.main-content section.cover-played .card{ 
-        width: 25%; 
+    main section.main-content section.cover-played .card-container .card{ 
+        width: calc(100% / 5); 
         padding-right: 1rem;
     
     } footer section.player-controll .player-buttoms {
@@ -407,6 +424,97 @@ footer section.volume .player-time2 .bar2 .in2{
 
 } 
 
+@media screen and (max-width:1200px) {
+    main .main-content{   
+        width:75%; 
+    } 
+    main .nav-left{ 
+        width: 25%;
+        padding: 10px;      
+    }  
+
+    main section.nav-left .top-content .top-menu .option img, span{ 
+        vertical-align: middle;
+        width: 15%;
+    } 
+     main section.nav-left .top-content .logo{ 
+        height: 4vh;
+        width: 60%;
+    } 
+    
+    main section.nav-left  img{ 
+        text-align: left;
+        width: 80%;
+    }
+    main section.nav-left .top-content .logo{
+        height: 4vh;
+    } 
+    
+    main section.main-content .upgrade{  
+        height: 4vh;
+    } 
+    
+    main section.main-content .top-bar{
+        text-align: center;
+    } 
+
+    main section.main-content .top-bar ol li { 
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+
+    section.main-content section.cover-played h2 { 
+        font-size: 1.5rem; 
+    } 
+    
+    section.main-content section.cover-played .card-container .description{
+        font-size: .8rem; 
+        padding: 5px;
+    } 
+
+    main section.main-content section.cover-played .card-container .card{ 
+        width: calc(100% / 5); 
+        padding-right: 1rem;
+    
+    } footer section.player-controll .player-buttoms {
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    
+    footer section.player-controll .player-time .bar{
+        width: 60%;
+    }
+
+    
+    footer section.play {
+        flex-basis: 40%;
+    } 
+
+    footer section.play img {
+        width: 40%;
+        margin-right: 15px
+    }
+    
+    footer section.player-controll{ 
+            flex-basis: 60%; 
+    }  
+        
+    footer section.volume {
+            flex-basis: 40%;
+        }
+
+    
+
+}  
+
+@media screen  and (max-height:520px) {
+
+    main .app{
+        display: none;
+    }
+    
+}
+
 
 
 /* Medium */
@@ -414,7 +522,7 @@ footer section.volume .player-time2 .bar2 .in2{
 @media screen and (max-width:768px) {
    
     main .main-content{   
-        width:75%; 
+        width:75%;  
     } 
     main .nav-left{ 
         width: 25%;
@@ -451,10 +559,8 @@ footer section.volume .player-time2 .bar2 .in2{
         font-size: .8rem;
     } 
     
-    section.main-content section.cover-played .card{ 
-        width: 50%; 
-        padding-right: 1rem;
-    
+    main section.main-content section.cover-played .card-container .card{ 
+        width: calc(100% / 4);    
     } 
     
     main .nav-left{
@@ -516,7 +622,9 @@ footer section.volume .player-time2 .bar2 .in2{
 
     main section.nav-left .top-content .logo{
         width: 50px; 
-        height: 4vh;
+        height: 4vh; 
+        margin-top: 10px;
+        background-position: left;
     } 
 
     main section.nav-left .top-content .top-menu a {
@@ -580,15 +688,14 @@ footer section.volume .player-time2 .bar2 .in2{
         font-size: .8rem;
     } 
     
-    section.main-content section.cover-played .card{ 
-        width: 50%; 
-        padding-right: 1rem;
-    
+    main section.main-content section.cover-played .card-container .card{ 
+        width: calc(100% / 2); 
     }  
     
     footer section.player-controll .player-buttoms {
         width: 85%;
-        font-size: 1.5rem;}
+        font-size: 1.5rem;
+    }
 
     
     footer section.play {
