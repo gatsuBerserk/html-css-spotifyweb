@@ -142,7 +142,6 @@ main section.nav-left .app .name-profile> img{
     background-color: salmon;
     border-radius: 50%;
     padding: 5px; 
-    margin-bottom: 20px;
 }
 main section.nav-left .app .install a, .name-profile a{
     text-decoration: none; 
@@ -279,8 +278,6 @@ section.main-content section.cover-played .card .description{
     border-radius: 50%;
 }
 
-
-
 section.main-content section.cover-played .card img{ 
     width: 100%; 
     padding-right: 1rem; 
@@ -375,7 +372,7 @@ footer section.player-controll .player-time{
 footer section.player-controll .player-time .bar{
     width: calc(100% / 2);
     height: 5px;
-    background-color: yellow;
+    background-color: silver;
     border-radius: 50px;
 } 
 
@@ -383,8 +380,8 @@ footer section.player-controll .player-time .bar .in{
     width: 20%;
     height: 5px;
     border-radius: 50px;
-    background-color: tomato;
-}
+    background-color: white;
+} 
 
 footer section.volume{
     display: flex;
@@ -403,7 +400,7 @@ footer section.volume .player-time2{
 footer section.volume .player-time2 .bar2{
     width: 100%;
     height: 5px;
-    background-color: yellow;
+    background-color: silver;
     border-radius: 50px; 
 }  
 
@@ -411,7 +408,7 @@ footer section.volume .player-time2 .bar2 .in2{
     width: 20%;
     height: 5px;
     border-radius: 50px;
-    background-color: tomato;
+    background-color: white;
 }
  
 
